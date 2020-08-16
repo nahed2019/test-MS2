@@ -1,0 +1,89 @@
+body {
+  background-color:#fafafa;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+.bg-custom {
+    background-color: #fff;
+}
+
+#hero-img {
+    width: 90%;
+    background: url("../images/travel2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    margin: 10px 0;
+    padding-top: 20px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+.card {
+    width: 90%;
+}
+
+.card-group-section {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.holder img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+
+.custom-grid {
+  background: #50a4fe;
+  padding: 30px 0;
+  display: grid;
+  grid-gap: 30px;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+ 
+  transform: translateX(0) ;
+  opacity: 1;
+}
+
