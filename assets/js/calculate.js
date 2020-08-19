@@ -1,7 +1,7 @@
 
 // selecte city function
 
-function selectCity(){
+function selectCity() {
 let city = document.getElementById("inputcity");
 let citySelected = city.options[city.selectedIndex].value;
 
@@ -19,26 +19,14 @@ console.log(hotelSelected);
 
 
 function calculate(){
-    let persons = document.getElementById("inputNoOfPersons").value;
-    let days = document.getElementById("inputNoOfdays").value;
+    var persons = document.getElementById("inputNoOfPersons").value;
+    var days = document.getElementById("inputNoOfdays").value;
+    var result = parseFloat(persons) + parseFloat(days);
     console.log(persons);
     console.log(days);
-    //let result = parseInt(citySelected)*parseInt(hotelSelected)*parseInt(persons)*parseInt(days);
-   // getElementById("CalculateTheCost").value= result;
-}
+    console.log(result);
+    }
 
 
 
 
-/*function calculate(){
-
-let city = document.glementById("inputcity").selected;
-let hotel = document.getElementById("inputHotel").selected;
-let persons = document.getElementById("inputNoOfPersons").value;
-let days = document.getElementById("inputNoOfdays").value;
-let guide = document.getElementById("guideCheck").value;
-
-let result = (parseFloat(city) * parseFloat(hotel) * parseFloat(persons) * parseFloat(days)) + parseFloat(guide);
-
-
-}*/

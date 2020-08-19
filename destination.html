@@ -400,7 +400,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    name="inputNoOfPersons"
+                    id="inputNoOfPersons"
                   />
                 </div>
                 <label for="inputNoOfdays" class="col-sm-3 col-form-label"
@@ -410,7 +410,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    name="inputNoOfdays"
+                    id="inputNoOfdays"
                   />
                 </div>
               </div>
@@ -438,7 +438,7 @@
 
               <div class="form-group row">
                 <div class="col-sm-4">
-                  <button onclick="calculat()" class="btn btn-primary">
+                  <button onclick="calculate()" class="btn btn-primary">
                     Calculate Now
                   </button>
                 </div>
@@ -447,7 +447,7 @@
                     type="text"
                     class="form-control"
                     id="CalculateTheCost"
-                    value=""
+                    
                   />
                 </div>
               </div>
@@ -466,9 +466,7 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/calculate.js"></script>
     
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -484,5 +482,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/calculate.js"></script>
   </body>
 </html>
